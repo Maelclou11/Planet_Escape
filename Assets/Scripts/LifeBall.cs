@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class LifeBall : MonoBehaviour
 {
-    public Animator animator;
-    public Player player;
     public GameObject niceTry;
-    public Cash cash;
     public bool isDead = false;
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
+    private Cash cash;
+    private Player player;
+    private Animator animator;
+
+
+    private void Start()
+    {
+        cash = FindObjectOfType<Cash>();
+        animator = gameObject.GetComponent<Animator>();
+        player = FindObjectOfType<Player>();
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Obstacle")
