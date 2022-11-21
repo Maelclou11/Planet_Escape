@@ -464,7 +464,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &293591097
 MonoBehaviour:
@@ -994,7 +994,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &952068608
 Transform:
@@ -1056,11 +1056,12 @@ MonoBehaviour:
   score: {fileID: 1727898769}
   completeLevelUI: {fileID: 736316504}
   arrayLevels:
-  - {fileID: 8797967480072186445, guid: 35a3e0aeb354f2d4e8e8c4ecaace3553, type: 3}
-  - {fileID: 8398322750638021074, guid: 8a1c1df9dabb61848a136f7d4834ee15, type: 3}
-  - {fileID: 3370715846818744470, guid: e8f0cfa1d9e60d040ae65ff8387a0f0d, type: 3}
-  - {fileID: 2317715922441407989, guid: 47168b5b6d48fe949828248d478e6894, type: 3}
+  - {fileID: 6205052726735086114, guid: 35a3e0aeb354f2d4e8e8c4ecaace3553, type: 3}
+  - {fileID: 3813625428893300455, guid: 8a1c1df9dabb61848a136f7d4834ee15, type: 3}
+  - {fileID: 5803300498728177768, guid: e8f0cfa1d9e60d040ae65ff8387a0f0d, type: 3}
+  - {fileID: 4452619440934589518, guid: c8cac282321eeb248b6d5e4b83b447f1, type: 3}
   distanceToSpawn: 15
+  lastLevelPlayedIndex: 0
 --- !u!4 &1020036702
 Transform:
   m_ObjectHideFlags: 0
@@ -1091,7 +1092,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1087154268
 MonoBehaviour:
@@ -1112,7 +1113,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087154267}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1135,7 +1136,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1220966235
 MonoBehaviour:
@@ -1156,7 +1157,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220966234}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

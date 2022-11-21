@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject completeLevelUI;
     public GameObject[] arrayLevels;
     public float distanceToSpawn = 6f;
+    public int lastLevelPlayedIndex;
 
     private List<GameObject> listLevels = new List<GameObject>();
 
@@ -56,6 +57,12 @@ public class GameManager : MonoBehaviour
         int randomLevelIndex = Random.Range(0, listLevels.Count);
         GameObject tempLevel = listLevels[randomLevelIndex];
         listLevels.RemoveAt(randomLevelIndex);
+        lastLevelPlayedIndex = randomLevelIndex;
         return tempLevel;
+    }
+
+    public int LastLevelPlayedIndex()
+    {
+        return lastLevelPlayedIndex;
     }
 }

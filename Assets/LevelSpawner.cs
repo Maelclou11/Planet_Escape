@@ -14,17 +14,24 @@ public class LevelSpawner : MonoBehaviour
         gameManager = GameObject.FindObjectOfType<GameManager>();
         lifeBall = GameObject.FindGameObjectWithTag("LifeBall");
         hasInstantiate = false;
-        Debug.Log(gameObject.transform.position);
+
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        float positionFromLifeBall = gameObject.transform.position.y - gameManager.distanceToSpawn;
+        float distanceFromLifeBall = gameObject.transform.position.y - gameManager.distanceToSpawn;
+        if (transform.position.y > distanceFromLifeBall)
+        {
+            
+        }
+        Vector2 lol = new Vector2(0, 15);
 
-        if (positionFromLifeBall <= lifeBall.transform.position.y && hasInstantiate == false)
+        if (distanceFromLifeBall <= lifeBall.transform.position.y && hasInstantiate == false)
         {
             Instantiate(gameManager.OneUniqueLevel(), gameObject.transform.position, Quaternion.identity);
+            int test = gameManager.LastLevelPlayedIndex();
+            Debug.Log(gameManager.arrayLevels[test].transform.position);
             hasInstantiate = true;
         }
     }
