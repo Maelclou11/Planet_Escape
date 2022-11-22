@@ -27,7 +27,7 @@ public class FreezingCircle : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (transform.position.y <= lifeBall.transform.position.y + 15)
+        if (transform.position.y <= lifeBall.transform.position.y + 15 && collision.collider.tag == "Player")
         {
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 
@@ -37,7 +37,7 @@ public class FreezingCircle : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (transform.position.y <= lifeBall.transform.position.y + 15)
+        if (transform.position.y <= lifeBall.transform.position.y + 15 && collision.collider.tag == "Player")
         {
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
