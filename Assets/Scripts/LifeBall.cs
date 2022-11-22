@@ -6,17 +6,21 @@ public class LifeBall : MonoBehaviour
 {
     public GameObject niceTry;
     public bool isDead = false;
+    
 
     private Cash cash;
     private Player player;
     private Animator animator;
+    private ParticleSystem particleSystem;
 
 
     private void Start()
     {
+        particleSystem = gameObject.GetComponent<ParticleSystem>();
         cash = FindObjectOfType<Cash>();
         animator = gameObject.GetComponent<Animator>();
         player = FindObjectOfType<Player>();
+        particleSystem.Pause();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -34,6 +38,7 @@ public class LifeBall : MonoBehaviour
         niceTry.SetActive(true); // Turn on the animation "Nice Try" after dying
         isDead = true;
         cash.enabled = false;
+        particleSystem.Play();
     }
 
 }
