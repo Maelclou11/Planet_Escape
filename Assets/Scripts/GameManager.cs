@@ -57,12 +57,6 @@ public class GameManager : MonoBehaviour
         int randomLevelIndex = Random.Range(0, listLevels.Count);
         GameObject tempLevel = listLevels[randomLevelIndex];
         listLevels.RemoveAt(randomLevelIndex);
-        lastLevelPlayedIndex = randomLevelIndex;
         return tempLevel;
-    }
-
-    public int LastLevelPlayedIndex()
-    {
-        return lastLevelPlayedIndex;
     }
 }

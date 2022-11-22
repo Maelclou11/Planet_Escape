@@ -32,8 +32,11 @@ public class Player : MonoBehaviour
         if (Input.GetKey("s"))
             rb2d.MoveRotation(rb2d.rotation - rotationSpeed);
 
-        if (Input.GetMouseButtonDown(2))
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
+        {
             rb2d.MoveRotation(0);
+            rb2d.SetRotation(0);
+        }
 
         if (Input.GetMouseButton(1))
             rb2d.MoveRotation(rb2d.rotation - rotationSpeed);
