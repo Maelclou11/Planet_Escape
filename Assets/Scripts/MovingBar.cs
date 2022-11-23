@@ -23,7 +23,7 @@ public class MovingBar : MonoBehaviour
         }
 
 
-        if (transform.position.y <= lifeBall.transform.position.y + 10)
+        if (transform.position.y <= lifeBall.transform.position.y + 12)
         {
             if (transform.position.x >= -15)
             {

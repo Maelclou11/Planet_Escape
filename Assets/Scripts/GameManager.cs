@@ -14,10 +14,12 @@ public class GameManager : MonoBehaviour
     public GameObject[] arrayLevels;
     public float distanceToSpawn = 6f;
 
+    private GoingUp goingUp;
     private List<GameObject> listLevels = new List<GameObject>();
 
     private void Start()
     {
+        goingUp = FindObjectOfType<GoingUp>();
         if (arrayLevels.Length < 0)
         {
             Debug.Log("wtf");
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour
             gameHasEnded = true;
             Invoke("Restart", restartDelay);
             score.enabled = false;
+            goingUp.enabled = false;
         }
     }
 
@@ -44,6 +47,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         score.enabled = true;
+        goingUp.enabled = true;
     }
 
     public void CompleteLevel()
