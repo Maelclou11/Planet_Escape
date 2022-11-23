@@ -6,7 +6,7 @@ public class LifeBall : MonoBehaviour
 {
     public GameObject niceTry;
     public bool isDead = false;
-    
+    public Animation flyingAnimation;
 
     private Cash cash;
     private Player player;
