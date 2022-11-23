@@ -6302,7 +6302,7 @@ MonoBehaviour:
   - {fileID: 3813625428893300455, guid: 8a1c1df9dabb61848a136f7d4834ee15, type: 3}
   - {fileID: 2707673955411023054, guid: c8012e34ffa69514fbec129d2cf22343, type: 3}
   - {fileID: 4452619440934589518, guid: c8cac282321eeb248b6d5e4b83b447f1, type: 3}
-  - {fileID: 3269476062593170456, guid: cf58ad59e2ed7264ca86b31e057e0ee5, type: 3}
+  - {fileID: 6121279892415039547, guid: 8e9943102715f024a81f265c7036f5e6, type: 3}
   distanceToSpawn: 25
 --- !u!4 &1020036702
 Transform:
