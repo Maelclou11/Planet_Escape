@@ -6,8 +6,6 @@ public class LifeBall : MonoBehaviour
 {
     public GameObject niceTry;
     public bool isDead = false;
-    public Animation flyingAnimation;
-    public Animation dyingAnimation;
 
     private Cash cash;
     private Player player;
@@ -28,7 +26,7 @@ public class LifeBall : MonoBehaviour
         if (collision.collider.tag == "Obstacle")
         {
             Die();
-            animator.enabled = true;
+            //animator.enabled = true;
         }
     }
 

@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 27358
+  controlID: 39606
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -83,8 +83,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -97,18 +97,18 @@ MonoBehaviour:
       y: 21
       width: 548
       height: 612
-    m_Scale: {x: 0.68, y: 0.68}
-    m_Translation: {x: 274, y: 306}
+    m_Scale: {x: 0.9412787, y: 0.9412787}
+    m_Translation: {x: 267.88388, y: 266.7645}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -402.94116
-      y: -450
-      width: 805.8823
-      height: 900
+      x: -284.5957
+      y: -283.4065
+      width: 582.18677
+      height: 650.1794
     m_MinimalGUI: 1
   m_defaultScale: 0.68
   m_LastWindowPixelSize: {x: 548, y: 633}
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 27359
+  controlID: 39576
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 27331
+  controlID: 39577
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,7 +227,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 66d40000
       m_LastClickedID: 54374
-      m_ExpandedIDs: 3434ffff1640ffffe489ffff508affffc08affff4aa2ffff7ea3ffff6cb4ffff2ccdffff8acdffffe8cdffff46ceffffa4ceffff02cfffff60cfffffbecfffff1cd0ffff6ad1ffffc8d1ffff98d6ffff22f2ffff52f8ffffd65f0000848700008c8a00008691000070a800005aa90000
+      m_ExpandedIDs: e2d5feff3434ffff1640ffffe489ffff508affffc08affff4aa2ffff7ea3ffff6cb4ffff2ccdffff8acdffffe8cdffff46ceffffa4ceffff02cfffff60cfffffbecfffff1cd0ffff6ad1ffffc8d1ffff98d6ffff22f2ffff52f8ffffd65f0000848700008c8a00008691000070a800005aa90000e0d40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -525,9 +525,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.97634387, y: -8.931677, z: -5.0703635}
+    m_Target: {x: 0.5186444, y: -9.138389, z: -4.224918}
     speed: 2
-    m_Value: {x: 0.97634387, y: -8.931677, z: -5.0703635}
+    m_Value: {x: 0.5186444, y: -9.138389, z: -4.224918}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -578,9 +578,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.832193
+    m_Target: 4.0435276
     speed: 2
-    m_Value: 5.832193
+    m_Value: 4.0435276
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -832,22 +832,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs/Levels
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs/Levels
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\MC\Documents\Unity_Workspace\GitDepot\Planet_Escape
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 12610000
-    m_LastClickedID: 24850
-    m_ExpandedIDs: 0000000012610000
+    m_SelectedIDs: 5c610000
+    m_LastClickedID: 24924
+    m_ExpandedIDs: 00000000126100002a610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1053,7 +1053,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 10
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
