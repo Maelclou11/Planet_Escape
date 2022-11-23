@@ -24,7 +24,7 @@ public class FreezingCircle : MonoBehaviour
             cash.Ajouter(1);
         }
 
-        if (transform.position.y < lifeBall.transform.position.y + 5)
+        if (transform.position.y < lifeBall.transform.position.y + 7)
         {
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
@@ -35,8 +35,6 @@ public class FreezingCircle : MonoBehaviour
         if (transform.position.y <= lifeBall.transform.position.y + 12 || collision.collider.tag == "Player")
         {
             gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-
-
         }
     }
 

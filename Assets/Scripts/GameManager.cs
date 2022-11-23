@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     public GameObject completeLevelUI;
     public GameObject[] arrayLevels;
     public float distanceToSpawn = 6f;
-    public int lastLevelPlayedIndex;
 
     private List<GameObject> listLevels = new List<GameObject>();
 
