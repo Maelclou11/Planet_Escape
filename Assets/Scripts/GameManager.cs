@@ -13,12 +13,14 @@ public class GameManager : MonoBehaviour
     public GameObject completeLevelUI;
     public GameObject[] arrayLevels;
     public float distanceToSpawn = 6f;
+    public GameObject startMenuUI;
 
     private GoingUp goingUp;
     private List<GameObject> listLevels = new List<GameObject>();
 
     private void Start()
     {
+        startMenuUI.SetActive(true);
         goingUp = FindObjectOfType<GoingUp>();
         if (arrayLevels.Length < 0)
         {

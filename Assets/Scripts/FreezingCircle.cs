@@ -21,7 +21,7 @@ public class FreezingCircle : MonoBehaviour
         if (transform.position.y < lifeBall.transform.position.y + -5)
         {
             Destroy(gameObject);
-            cash.Ajouter(1);
+            cash.AddCash(1);
         }
 
         if (transform.position.y < lifeBall.transform.position.y + 7)

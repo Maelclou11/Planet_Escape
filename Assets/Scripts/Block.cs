@@ -20,7 +20,7 @@ public class Block : MonoBehaviour
         if (transform.position.y < lifeBall.transform.position.y + -5)
         {
             Destroy(gameObject);
-            cash.Ajouter(1);
+            cash.AddCash(1);
         }
 
         // Enable the gravity when the life ball reach them from a distance of 8 units

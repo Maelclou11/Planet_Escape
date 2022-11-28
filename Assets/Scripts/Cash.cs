@@ -6,20 +6,42 @@ using UnityEngine.UI;
 public class Cash : MonoBehaviour
 {
     public Text textCash;
-    private int cashAmount; // = 20
-    // Start is called before the first frame update
+    public Animator animationBrokie;
+
     void Start()
     {
-        textCash.text = "0$";
+        textCash.text = PlayerPrefs.GetInt("Cash", 0).ToString("0$");
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        textCash.text = cashAmount.ToString("0$");
+        textCash.text = PlayerPrefs.GetInt("Cash", 0).ToString("0$");
     }
 
-    public void Ajouter(int numberToAdd)
+    public void AddCash(int numberToAdd)
     {
-        cashAmount = cashAmount + numberToAdd;
+        PlayerPrefs.SetInt("Cash", (PlayerPrefs.GetInt("Cash", 0) + numberToAdd));
+    }
+
+    public void ResetMoney()
+    {
+        PlayerPrefs.DeleteKey("Cash");
+    }
+
+    public void Buy(int cost)
+    {
+        if (cost < PlayerPrefs.GetInt("Cash", 0))
+        {
+            PlayerPrefs.SetInt("Cash", PlayerPrefs.GetInt("Cash", 0) - cost);
+        } else
+        {
+            animationBrokie.enabled = true;
+            Invoke("BrokeOff", 2);
+        }
+    }
+
+    public void BrokeOff()
+    {
+        animationBrokie.enabled = false;
     }
 }
